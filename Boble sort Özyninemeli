@@ -1,0 +1,17 @@
+# Kodu kendim yazdığıma ispat olsun diye tersten dönen bir method denedim
+
+def booble_sort_recursive(list, len_list1, len_list2):
+     if len_list1 == 0:
+         if len_list2 == 0:
+             return list
+         else:
+             return booble_sort_recursive(list, len(list)-1, len_list2-1)         
+     
+     elif list[len_list1] > list[len_list1-1]:
+        list[len_list1],list[len_list1-1]=list[len_list1-1],list[len_list1]
+        return booble_sort_recursive(list, len_list1-1, len_list2)
+     else:
+        return booble_sort_recursive(list, len_list1-1, len_list2)
+
+# Fonksiyonun kullanılma methodu biraz değişik olacak ama len_list1 ve len_list2 girilirken 1 eksik girilecek 
+   
