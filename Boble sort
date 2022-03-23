@@ -1,0 +1,10 @@
+# Her seferinde aldığımız elemanı sonuna dek götürerek sıraladık
+
+def booble_sort(list):
+    sarmal = 0
+    for i in range(len(list)):
+        sarmal += 1
+        for j in range(len(list)-sarmal):
+            if list[j] > list[j+1]:
+                list[j],list[j+1] = list[j+1],list[j]
+    return list
