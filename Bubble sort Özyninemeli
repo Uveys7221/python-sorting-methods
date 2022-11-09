@@ -1,5 +1,3 @@
-# Kodu kendim yazdığıma ispat olsun diye tersten dönen bir method denedim
-
 def booble_sort_recursive(list, len_list1, len_list2):
      if len_list1 == 0:
          if len_list2 == 0:
